@@ -13,6 +13,7 @@ import { LandingPageGlobalStyles } from "../home-shared/GlobalStyles";
 import styles from "./index.module.css";
 import PackLogo from "../../logos/PackLogo";
 import RepoLogo from "../../logos/RepoLogo";
+import { Discord, Github } from "../../Social";
 
 
 function Background() {
@@ -72,7 +73,7 @@ function Card({
       href={href}
       className={cn(
         styles["counter-border"],
-        "w-[calc(100%_-_0px)] h-[304]px sm:!w-[488px] sm:h-[352px]"
+        "w-[calc(100%_-_0px)] h-[304]px sm:!w-[488px] sm:h-[152px]"
       )}
       onMouseEnter={() => setHovering(true)}
       onMouseLeave={() => setHovering(false)}
@@ -94,7 +95,7 @@ function Card({
         </div>
 
         <div className="flex flex-col items-center flex-1">
-          {title == "pack" ? (
+          {/* {title == "pack" ? (
             <PackLogo
               alt={alt}
               className="w-[160px] md:w-[220px] mb-3 fill-black dark:fill-white"
@@ -104,7 +105,7 @@ function Card({
               alt={alt}
               className="w-[160px] md:w-[220px] mb-3 fill-black dark:fill-white"
             />
-          )}
+          )} */}
           {children}
         </div>
       </div>
@@ -114,18 +115,17 @@ function Card({
 
 function SiteCards() {
   return (
-    <div className="flex w-full container items-center justify-center gap-6 px-6 sm:mx-0 mt-8 md:!mt-14 lg:!mt-15 md:mb-0 flex-col lg:!flex-row z-10 lg:!translate-y-0">
+    <div className="flex w-full container items-center justify-center gap-6 px-6 sm:mx-0 mt-10 md:!mt-44 lg:!mt-15 lg:!mb-40 md:mb-10 flex-col lg:!flex-row z-10 lg:!translate-y-0">
       <FadeIn delay={0.1}>
         <Card
           title="repo"
           alt="Turborepo"
-          icon={Turborepo}
+          icon={Discord}
           href="/repo"
           className="turborepoCardBg"
-        >
-          <p className="text-lg !w-[280px] md:!w-[340px] font-space-grotesk text-center opacity-50 dark:opacity-70">
-            High-performance build system for JavaScript and TypeScript
-            codebases.
+        > 
+          <p className="text-lg !w-[280px] md:!w-[140px] font-space-grotesk text-center opacity-50 dark:opacity-70">
+          Join Discord
           </p>
         </Card>
       </FadeIn>
@@ -133,15 +133,15 @@ function SiteCards() {
         <Card
           title="pack"
           alt="Turbopack"
-          icon={Turbopack}
+          icon={Github}
           href="/pack"
           className="turbopackCardBg"
         >
           <div className="absolute top-3 left-3">
-            <CardBadge>alpha</CardBadge>
+            <CardBadge>beta</CardBadge>
           </div>
           <p className="text-lg !w-[280px] md:!w-[340px] font-space-grotesk text-center opacity-50 dark:opacity-70 ">
-            Introducing the Rust-powered successor to Webpack.
+            Join events
           </p>
         </Card>
       </FadeIn>
@@ -153,18 +153,16 @@ function Teams() {
   return (
     <div className="mx-auto ">
       <p className="bg-contain mb-2 md:!mb-4 text-sm font-semibold tracking-wide text-center text-[#666666] dark:text-[#888888] uppercase">
-        Trusted by teams from
-        <br className="inline md:hidden" /> around the world
+      Community contributors 
+        <br className="inline md:hidden" /> helping build the future
       </p>
       <div className="z-50 grid grid-flow-col grid-rows-6 sm:grid-rows-3 md:grid-rows-2 lg:grid-rows-1">
         <Clients
           companyList={[
-            "Vercel",
-            "AWS",
-            "Microsoft",
-            "Adobe",
-            "Disney",
-            "Netflix",
+            "Toronto",
+            "PCBWay",
+            "EmEx",
+            "Parallel Innovation",
           ]}
           staticWidth
         />
@@ -181,11 +179,10 @@ function LandingPage() {
         <Background />
         <FadeIn className="z-10 flex flex-col items-center justify-center w-full h-full">
           <h1 className="mt-12 lg:!mt-20 mx-6 w-[300px] md:!w-full font-extrabold text-5xl lg:text-6xl leading-tight text-center mb-4 bg-clip-text text-transparent bg-gradient-to-b from-black/80 to-black dark:from-white dark:to-[#AAAAAA]">
-            Make Ship Happppppen
+            H20 Smart Glasses Community
           </h1>
           <p className="mx-6 text-xl max-h-[112px] md:max-h-[96px] w-[315px] md:w-[660px] md:text-2xl font-space-grotesk text-center text-[#666666] dark:text-[#888888]">
-            Turbo is an incremental bundler and build system optimized for
-            JavaScript and TypeScript, written in Rust.
+          A community of smart glasses users, developers, researchers, and companies.
           </p>
         </FadeIn>
         <SiteCards />

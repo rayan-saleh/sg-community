@@ -13,16 +13,6 @@ exports.id = "pages/_error";
 exports.ids = ["pages/_error"];
 exports.modules = {
 
-/***/ "./sentry.server.config.js":
-/*!*********************************!*\
-  !*** ./sentry.server.config.js ***!
-  \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sentry_nextjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @sentry/nextjs */ \"@sentry/nextjs\");\n/* harmony import */ var _sentry_nextjs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sentry_nextjs__WEBPACK_IMPORTED_MODULE_0__);\nvar _sentryCollisionFreeGlobalObject = \"undefined\" === \"undefined\" ? global : window;\n_sentryCollisionFreeGlobalObject[\"__sentryRewritesTunnelPath__\"] = undefined;\n_sentryCollisionFreeGlobalObject[\"SENTRY_RELEASE\"] = {\n    \"id\": \"development\"\n};\n_sentryCollisionFreeGlobalObject[\"__rewriteFramesDistDir__\"] = \".next\";\n// This file configures the initialization of Sentry on the server.\n// https://docs.sentry.io/platforms/javascript/guides/nextjs/\n\n_sentry_nextjs__WEBPACK_IMPORTED_MODULE_0__.init({\n    environment: process.env.NEXT_PUBLIC_VERCEL_ENV,\n    dsn: process.env.SENTRY_DSN || process.env.NEXT_PUBLIC_SENTRY_DSN,\n    // Adjust this value in production, or use tracesSampler for greater control\n    tracesSampleRate: 1.0\n});\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zZW50cnkuc2VydmVyLmNvbmZpZy5qcy5qcyIsIm1hcHBpbmdzIjoiOzs7QUFBQSxJQUFJQSxtQ0FBbUMsZ0JBQWtCLGNBQWNDLFNBQVNDLE1BQU07QUFDdEZGLGdDQUFnQyxDQUFDLCtCQUErQixHQUFHRztBQUNuRUgsZ0NBQWdDLENBQUMsaUJBQWlCLEdBQUc7SUFBQyxNQUFLO0FBQWE7QUFDeEVBLGdDQUFnQyxDQUFDLDJCQUEyQixHQUFHO0FBRS9ELG1FQUFtRTtBQUNuRSw2REFBNkQ7QUFFcEI7QUFFekNJLGdEQUFXLENBQUM7SUFDVkUsYUFBYUMsUUFBUUMsR0FBRyxDQUFDQyxzQkFBc0I7SUFDL0NDLEtBQUtILFFBQVFDLEdBQUcsQ0FBQ0csVUFBVSxJQUFJSixRQUFRQyxHQUFHLENBQUNJLHNCQUFzQjtJQUNqRSw0RUFBNEU7SUFDNUVDLGtCQUFrQjtBQUNwQiIsInNvdXJjZXMiOlsid2VicGFjazovL2RvY3MvLi9zZW50cnkuc2VydmVyLmNvbmZpZy5qcz83NjMwIl0sInNvdXJjZXNDb250ZW50IjpbInZhciBfc2VudHJ5Q29sbGlzaW9uRnJlZUdsb2JhbE9iamVjdCA9IHR5cGVvZiB3aW5kb3cgPT09IFwidW5kZWZpbmVkXCIgPyBnbG9iYWwgOiB3aW5kb3c7XG5fc2VudHJ5Q29sbGlzaW9uRnJlZUdsb2JhbE9iamVjdFtcIl9fc2VudHJ5UmV3cml0ZXNUdW5uZWxQYXRoX19cIl0gPSB1bmRlZmluZWQ7XG5fc2VudHJ5Q29sbGlzaW9uRnJlZUdsb2JhbE9iamVjdFtcIlNFTlRSWV9SRUxFQVNFXCJdID0ge1wiaWRcIjpcImRldmVsb3BtZW50XCJ9O1xuX3NlbnRyeUNvbGxpc2lvbkZyZWVHbG9iYWxPYmplY3RbXCJfX3Jld3JpdGVGcmFtZXNEaXN0RGlyX19cIl0gPSBcIi5uZXh0XCI7XG5cbi8vIFRoaXMgZmlsZSBjb25maWd1cmVzIHRoZSBpbml0aWFsaXphdGlvbiBvZiBTZW50cnkgb24gdGhlIHNlcnZlci5cbi8vIGh0dHBzOi8vZG9jcy5zZW50cnkuaW8vcGxhdGZvcm1zL2phdmFzY3JpcHQvZ3VpZGVzL25leHRqcy9cblxuaW1wb3J0ICogYXMgU2VudHJ5IGZyb20gXCJAc2VudHJ5L25leHRqc1wiO1xuXG5TZW50cnkuaW5pdCh7XG4gIGVudmlyb25tZW50OiBwcm9jZXNzLmVudi5ORVhUX1BVQkxJQ19WRVJDRUxfRU5WLFxuICBkc246IHByb2Nlc3MuZW52LlNFTlRSWV9EU04gfHwgcHJvY2Vzcy5lbnYuTkVYVF9QVUJMSUNfU0VOVFJZX0RTTixcbiAgLy8gQWRqdXN0IHRoaXMgdmFsdWUgaW4gcHJvZHVjdGlvbiwgb3IgdXNlIHRyYWNlc1NhbXBsZXIgZm9yIGdyZWF0ZXIgY29udHJvbFxuICB0cmFjZXNTYW1wbGVSYXRlOiAxLjAsXG59KTtcbiJdLCJuYW1lcyI6WyJfc2VudHJ5Q29sbGlzaW9uRnJlZUdsb2JhbE9iamVjdCIsImdsb2JhbCIsIndpbmRvdyIsInVuZGVmaW5lZCIsIlNlbnRyeSIsImluaXQiLCJlbnZpcm9ubWVudCIsInByb2Nlc3MiLCJlbnYiLCJORVhUX1BVQkxJQ19WRVJDRUxfRU5WIiwiZHNuIiwiU0VOVFJZX0RTTiIsIk5FWFRfUFVCTElDX1NFTlRSWV9EU04iLCJ0cmFjZXNTYW1wbGVSYXRlIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./sentry.server.config.js\n");
-
-/***/ }),
-
 /***/ "./pages/_error.js":
 /*!*************************!*\
   !*** ./pages/_error.js ***!
@@ -70,7 +60,7 @@ module.exports = require("react/jsx-dev-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = (__webpack_exec__("./sentry.server.config.js"), __webpack_exec__("./pages/_error.js"));
+var __webpack_exports__ = (__webpack_exec__("./pages/_error.js"));
 module.exports = __webpack_exports__;
 
 })();

@@ -526,4 +526,41 @@ export const users: Array<TurboUser> = [
       width: 150,
     },
   },
+  {
+    caption: "Toronto",
+    image: "/images/logos/toronto.svg",
+    infoLink: "https://www.lguplus.com/about/en",
+    pinned: true,
+    style: {
+      width: 150,
+    },
+  },
+  
+  {
+    caption: "PCBWay",
+    image: "/images/logos/pcbway.svg",
+    infoLink: "https://www.lguplus.com/about/en",
+    pinned: true,
+    style: {
+      width: 150,
+    },
+  },
+  {
+    caption: "EmEx",
+    image: "/images/logos/emex.svg",
+    infoLink: "https://www.lguplus.com/about/en",
+    pinned: true,
+    style: {
+      width: 50,
+    },
+  },
+  {
+    caption: "Parallel Innovation",
+    image: "/images/logos/para.svg",
+    infoLink: "https://www.lguplus.com/about/en",
+    pinned: true,
+    style: {
+      width: 150,
+    },
+  },
 ];

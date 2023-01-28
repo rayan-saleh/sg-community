@@ -3,10 +3,26 @@ import Link from "next/link";
 import styles from "./header-logo.module.css";
 import TurboAnimated from "./logos/TurboAnimated";
 
+const Home = () => {
+  //return image
+  return (
+    <img
+      src="/images/h20-logo.png"
+      alt="TurboPack Logo"
+      width={120}
+      height={136.15}
+    />
+  );
+
+
+}
+
+
+
 function HeaderLogo() {
   return (
     <>
-      <a
+      {/* <a
         href="https://vercel.com"
         target="_blank"
         rel="noreferrer"
@@ -38,10 +54,13 @@ function HeaderLogo() {
         className="dark:text-[#333] text-[#eaeaea] ml-2 mr-1"
       >
         <path d="M16.88 3.549L7.12 20.451" />
-      </svg>
+      </svg> */}
 
       <Link href="/" title="Home" className="hover:opacity-75">
-        <TurboAnimated height={32} />
+        {/* <TurboAnimated height={32} /> */}
+
+        <Home />
+
       </Link>
       <div className={styles.siteSwitcher}>
         <SiteSwitcher />
